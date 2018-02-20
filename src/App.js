@@ -4,8 +4,13 @@ import './App.css';
 import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import Contact from './pages/Contact.jsx';
-import SpringSummer from './pages/Spring-Summer-2018.jsx';
-import FallWinter from './pages/Fall-Winter-2017.jsx';
+import Jackets from './pages/Jackets.jsx';
+import Pants from './pages/Pants.jsx';
+import Set from './pages/Set.jsx';
+import Shoes from './pages/Shoes.jsx';
+import Blouses from './pages/Blouses.jsx';
+import Hoodies from './pages/Hoodies.jsx';
+
 
 class App extends Component {
     render() {
@@ -15,8 +20,12 @@ class App extends Component {
                     <Route exact path="/" component={Home}/>
                     <Route path="/about" component={About}/>
                     <Route path="/contact" component={Contact}/>
-                    <Route path="/Spring-Summer-2018" component={SpringSummer}/>
-                    <Route path="/Fall-Winter-2017" component={FallWinter}/>
+                    <Route path="/Spring-Summer-2018/Jackets" component={Jackets}/>
+                    <Route path="/Spring-Summer-2018/Pants" component={Pants}/>
+                    <Route path="/Spring-Summer-2018/Set" component={Set}/>
+                    <Route path="/Spring-Summer-2018/Shoes" component={Shoes}/>
+                    <Route path="/Spring-Summer-2018/Blouses" component={Blouses}/>
+                    <Route path="/Spring-Summer-2018/Hoodies" component={Hoodies}/>
                 </div>
             </Router>
         );
@@ -24,3 +33,4 @@ class App extends Component {
 }
 
 export default App;
+
